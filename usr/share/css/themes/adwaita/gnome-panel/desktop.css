@@ -1,0 +1,183 @@
+/* UBUNTU FONTS */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono);
+
+/* UBUNTU CURSORS */
+* {
+	cursor: url("usr/share/images/themes/adwaita/cursors/default.png"), default;
+}
+p, textarea, input[type="text"], input[type="password"],
+*::selection, *::-moz-selection, *::-webkit-selection, *::-o-selection {
+	cursor: url("usr/share/images/themes/adwaita/cursors/text.png"), text;
+}
+a, a * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/pointer.png"), pointer, hand;
+}
+
+.cursor-default,.cursor-default * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/default.png"), default;
+}
+
+.cursor-text, .cursor-text * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/text.png"), text;
+}
+
+.cursor-pointer, .cursor-pointer * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/pointer.png"), pointer, hand;
+}
+
+.cursor-wait, .cursor-wait * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/wait.ani"), wait;
+}
+
+.cursor-move, .cursor-move * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/move.png"), move;
+}
+
+.cursor-none, .cursor-none * {
+	cursor: none;
+}
+
+img {
+	border-width: 0px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+a, a:hover, a:active {
+	color: #04369a;
+	outline: none; /* On enleve la bordure en pointilles par defaut sur certains navigateurs lors du clic sur un lien */
+}
+
+*::selection, *::-moz-selection, *::-webkit-selection, *::-o-selection {
+	background: #498ed6;
+	color: #fff;
+}
+
+body {
+	overflow: hidden;
+}
+
+/* Ensemble de l'interface */
+.gnome-panel { 
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	font-family: Ubuntu, Verdana, serif;
+	overflow: hidden;
+	position: absolute;
+}
+
+#header, #footer, .desktop-bar {
+	background-color: black;
+	width: 100%;
+	height: 26px;
+	color: #cbcbcb;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	z-index: 2000;
+}
+
+#header {
+	top: 0px;
+	border-bottom: 1px solid #526070;
+}
+
+#footer {
+	bottom: 0px;
+	border-top: 1px solid #526070;
+}
+
+#desktop {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: white;
+	overflow: hidden;
+	top: 27px;
+	bottom: 0;
+}
+
+#desktop-files, #desktop .fileiconzone {
+	width: 100%;
+	height: 100%;
+}
+
+#desktop-files {
+	top: 0px;
+	bottom: 0px;
+}
+
+/* BOUTONS DES FENETRES */
+#windows-buttons {
+	overflow: hidden;
+	height: 26px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+#windows-buttons .window-button {
+	float: left;
+	list-style-type: none;
+	width: 176px;
+	height: 22px;
+	overflow: hidden;
+	padding: 2px;
+	padding-right: 0px;
+	margin-top: 1px;
+	white-space: nowrap;
+}
+#windows-buttons .window-button img {
+	max-height:17px;
+	max-width:17px;
+	margin-right:3px;
+	
+	margin-left: 3px;
+	
+	float: left;
+}
+#windows-buttons .window-button:hover {
+	color: #dcdfe2;
+}
+#windows-buttons .window-button-active, #windows-buttons .window-button:active {
+	color: #dcdfe2;
+	background-color: #333333;
+}
+
+.desktop-button { background: url('usr/share/images/themes/ambiance/desktop-button.png'); height: 24px; width: 30px; float:left; }
+.desktop-button:hover { background-position: 0% 24px; }
+
+.ui-resizable-handle .ui-resizable-e {
+	height:2px;
+	position:relative;
+	bottom:2px;
+}
+.ui-selectable-helper {
+	border: 1px solid #498ed6;
+	background: rgba(73, 142, 214, 0.3);
+}
+
+.webos-nautilus ul.icons li.active span.filename {
+	background-color: #4a90d9 !important;
+	color: white;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#workspace-switcher {
+	margin-top: 3px;
+}
+.workspace-button {
+	background-color: #232323;
+	margin-right: 1px;
+	padding-left: 23px;
+	display: inline;
+}
+.workspace-button.selected {
+	background-color: #376594;
+}

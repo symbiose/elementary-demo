@@ -1,0 +1,188 @@
+/* UBUNTU FONTS */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono);
+
+/* UBUNTU CURSORS */
+* {
+	cursor: url("usr/share/images/themes/adwaita/cursors/default.png"), default;
+}
+p, textarea, input[type="text"], input[type="password"],
+*::selection, *::-moz-selection, *::-webkit-selection, *::-o-selection {
+	cursor: url("usr/share/images/themes/adwaita/cursors/text.png"), text;
+}
+a, a * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/pointer.png"), pointer, hand;
+}
+
+.cursor-default,.cursor-default * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/default.png"), default;
+}
+
+.cursor-text, .cursor-text * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/text.png"), text;
+}
+
+.cursor-pointer, .cursor-pointer * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/pointer.png"), pointer, hand;
+}
+
+.cursor-wait, .cursor-wait * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/wait.ani"), wait;
+}
+
+.cursor-move, .cursor-move * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/move.png"), move;
+}
+
+.cursor-none, .cursor-none * {
+	cursor: none;
+}
+
+img {
+	border-width: 0px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+a, a:hover, a:active {
+	color: #dd4814;
+}
+
+*::selection, *::-moz-selection, *::-webkit-selection, *::-o-selection {
+	background:#f07746;
+	color:#fff;
+}
+
+body {
+	overflow: hidden;
+}
+
+/* Ensemble de l'interface */
+.gnome-panel { 
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	font-family: Ubuntu, Verdana, serif;
+	overflow: hidden;
+	position: absolute;
+}
+
+#header {
+	background: url('usr/share/images/themes/ambiance/menu/background.png') repeat-x;
+	width: 100%;
+	height: 25px;
+	color: white;
+	padding: 0px;
+	position:absolute;
+	top: 0px;
+	-moz-box-shadow: 5px 4px 12px black;
+	-webkit-box-shadow: 5px 4px 12px black;
+	box-shadow: 5px 4px 12px black;
+}
+
+#desktop {
+	position: absolute;
+	width:100%;
+	height:100%;
+	color: white;
+	overflow:hidden;
+	top: 27px;
+	bottom: 25px;
+}
+
+#desktop-files, #desktop .fileiconzone {
+	width: 100%;
+	height: 100%;
+}
+
+#desktop-files {
+	top: 0px;
+	bottom: 0px;
+}
+
+#footer {
+	background: url('usr/share/images/themes/ambiance/menu/background.png') repeat-x;
+	height: 24px;
+	width:100%;
+	color: white;	
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	z-index: 2000;
+}
+
+/* BOUTONS DES FENETRES */
+.windows-buttons {
+	overflow: hidden;
+	height: 24px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.windows-buttons .window-button {
+	padding: 2px;
+	float: left;
+	list-style-type: none;
+	width: 176px;
+	height: 19px;
+	border-left: 1px solid #383733;
+	overflow: hidden;
+	padding-right: 0px;
+	white-space: nowrap;
+}
+.windows-buttons .window-button img {
+	max-height:17px;
+	max-width:17px;
+	margin-right:3px;
+	
+	margin-left: 3px;
+	
+	float: left;
+}
+.windows-buttons .window-button:hover {
+	background: url('usr/share/images/themes/ambiance/bg-window-button.png');
+	background-position: 0% 48px;
+}
+.windows-buttons .active, #windows-buttons .window-button:active {
+	background: url('usr/share/images/themes/ambiance/bg-window-button.png');
+	background-position: 0% 24px;
+}
+.windows-buttons:last-child {
+	border-right:1px solid #383733;
+}
+
+.desktop-button { background: url('usr/share/images/themes/ambiance/desktop-button.png'); height: 24px; width: 30px; float:left; }
+.desktop-button:hover { background-position: 0% 24px; }
+
+.ui-resizable-handle .ui-resizable-e {
+	height:2px;
+	position:relative;
+	bottom:2px;
+}
+.ui-selectable-helper {
+	border: 1px solid #f07746;
+	background: rgba(240, 119, 70, 0.3);
+}
+
+#desktop-welcome { display:none; }
+
+.workspace-button {
+	background-color:#333331;
+	margin-right:1px;
+	padding-left:23px;
+	display:inline;
+}
+.workspace-button.selected {
+	background-color:#ad502b;
+}
+
+.webos-nautilus ul.icons li.active span.filename {
+	background-color: #d76741;
+	color: white;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}

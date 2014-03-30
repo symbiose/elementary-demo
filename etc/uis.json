@@ -1,0 +1,58 @@
+[
+    {
+        "name": "gnome-shell",
+        "labels": [
+            "userInterface",
+            "guestInterface"
+        ],
+        "isDefault": false
+    },
+    {
+        "name": "gnome-panel",
+        "labels": [
+            "userInterface",
+            "guestInterface"
+        ],
+        "isDefault": false
+    },
+    {
+        "name": "windoze",
+        "labels": [
+            "userInterface",
+            "guestInterface"
+        ],
+        "isDefault": false
+    },
+    {
+        "name": "cli",
+        "labels": [
+            "userInterface",
+            "guestInterface"
+        ],
+        "isDefault": false
+    },
+    {
+        "name": "stunning",
+        "labels": [
+            "userInterface",
+            "guestInterface",
+            "touchDevices"
+        ],
+        "isDefault": false
+    },
+    {
+        "name": "slym",
+        "labels": [
+            "guestInterface"
+        ],
+        "isDefault": false
+    },
+    {
+        "name": "elementary",
+        "labels": [
+            "userInterface",
+            "guestInterface"
+        ],
+        "isDefault": true
+    }
+]

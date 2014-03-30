@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category>
+	<define name="name" value="uis"/>
+	<define name="title" value="Interfaces"/>
+	<define name="title" lang="fr_FR" value="Interfaces"/>
+	<define name="icon" value="actions/interface"/>
+	<define name="description" value="Manage user interfaces"/>
+	<define name="description" lang="fr_FR" value="Gérer les interfaces utilisateur"/>
+	<define name="category" value="system"/>
+	<define name="authorizations" value="file.system.read"/>
+</category>

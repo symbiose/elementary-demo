@@ -1,0 +1,395 @@
+.empathy-header {
+	padding: 3px;
+}
+
+.pull-right {
+	float: right;
+}
+.pull-right > div {
+	display: inline-block;
+}
+.clearfix {
+	display: block;
+	clear: both;
+}
+
+.views, .views > div {
+	width: 100%;
+	height: 100%;
+}
+.views {
+	position: relative;
+	overflow: hidden;
+}
+.views > div {
+	position: absolute;
+}
+
+.views .view-login .view-login-inner {
+	width: 400px;
+	margin: auto;
+}
+.view-login input {
+	margin: 5px;
+	width: 100%;
+}
+.view-login h2 {
+	font-size: 32px;
+	font-weight: bold;
+}
+.view-login .lead {
+	font-size: 20px;
+}
+
+.view-conversations .friends-list {
+	float: left;
+	height: 100%;
+	width: 320px;
+	border-right: 1px solid black;
+	overflow: auto;
+	background-color: #e6e6e6;
+}
+.friends-list > ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.friends-list > ul > li {
+	display: block;
+	max-width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding: 12px;
+	line-height: 32px;
+	border-bottom: 1px solid #d7d9d9;
+	white-space: nowrap;
+}
+.friends-list .item-active {
+	border: 1px solid #387eb1;
+	background-color: #3f99e8;
+	background-image: -moz-linear-gradient(#45a4e9, #378ae6);
+	background-image: -webkit-linear-gradient(#45a4e9, #378ae6);
+	background-image: linear-gradient(#45a4e9, #378ae6);
+	color: white;
+}
+.friends-list .contact-conversation-unread:before {
+	content: " ";
+	position: absolute;
+	left: 12px;
+	width: 10px;
+	height: 10px;
+	margin-top: 10px;
+	border: 1px solid #4789b9;
+	background-color: #48aae9;
+	background-image: -moz-linear-gradient(#6bcaee, #3583db);
+	background-image: -webkit-linear-gradient(#6bcaee, #3583db);
+	background-image: linear-gradient(#6bcaee, #3583db);
+	border-radius: 10px;
+}
+.friends-list .contact-picture,
+.friends-list .contact-name,
+.friends-list .contact-server,
+.friends-list .contact-status {
+	vertical-align: middle;
+}
+.friends-list .contact-picture {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-right: 12px;
+	margin-left: 20px;
+	border-radius: 2px;
+}
+.friends-list .contact-name {
+	display: inline-block;
+	max-width: 150px;
+	font-weight: bold;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.friends-list .contact-server {
+	display: inline-block;
+	margin-left: 5px;
+	font-size: 10px;
+	color: #808080;
+}
+.friends-list .item-active .contact-server {
+	color: #8cbee6;
+}
+.hide-contact-server .contact-server,
+.friends-list li:hover .contact-server {
+	display: none;
+}
+.friends-list .contact-status {
+	float: right;
+	font-size: 10px;
+	color: #808080;
+}
+.friends-list li:hover .contact-status {
+	display: none;
+}
+.friends-list .contact-status .status-inner {
+	display: none; /* hide status text */
+}
+.friends-list .item-active .contact-status {
+	color: #8cbee6;
+}
+.friends-list .contact-status:after {
+	display: inline-block;
+	content: " ";
+	width: 10px;
+	height: 10px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	margin-left: 7px;
+}
+.friends-list .contact-online .contact-status:after {
+	border-color: #6b8e20;
+	background-color: #acca36;
+	background-image: -moz-linear-gradient(#d9ea64, #8baf20);
+	background-image: -webkit-linear-gradient(#d9ea64, #8baf20);
+	background-image: linear-gradient(#d9ea64, #8baf20);
+}
+.friends-list .contact-away .contact-status:after,
+.friends-list .contact-dnd .contact-status:after,
+.friends-list .contact-xa .contact-status:after {
+	border-color: #bf911c;
+	background-color: #ffca65;
+	background-image: -moz-linear-gradient(#ffdd8d, #ffb53d);
+	background-image: -webkit-linear-gradient(#ffdd8d, #ffb53d);
+	background-image: linear-gradient(#ffdd8d, #ffb53d);
+}
+.friends-list .contact-offline .contact-status {
+	display: none;
+}
+
+.friends-list .contact-actions {
+	display: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.friends-list li:hover .contact-actions {
+	display: inline-block;
+}
+.friends-list .contact-actions li {
+	display: inline-block;
+	height: 13px;
+	width: 14px;
+	padding: 0;
+	margin-left: 10px;
+}
+.friends-list .contact-actions .action-message {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAABmJLR0QAhgCJAIokbLR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gIaCCcgTjzwcQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAA8klEQVQoz5WSPUpDURBGz3wvPi5IOkHBwkIxgnWWYOkmshgbt2DnHiwUCwtRsLZII4iioEj8gTC5MXNtnnZq3ukPzPkY85z5JqW0pIitAj2DzQJdg4cCwwqGn9K1u88AzHMmpVRZxC6wA4hfMLgL6cDdn8xzZrGuBwF95qDAC9KeVdAPGNCOEwVst5QQrMqg11acwbICXtuKBrcSXLYVF+BUIV0ZjFp4F+8538jdxyHtG4z/T+OoSIcAHQB3H6W6fjRYbxomTftbBR8Bz0U6c/efPTrNq60YrDUnH4d07u7TPwfynOnW9cZUmgD37l7mCf0Cz1ZhDpT18rgAAAAASUVORK5CYII=);
+}
+.friends-list .contact-actions .action-call {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAABmJLR0QAhgCJAIokbLR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gIaCCgluc4YMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABB0lEQVQoz42SPUoEQRCFvyqHpnfZQBMxX1gQfzYVcwMTPYCBmHkbwcTMA3gEAwMPYOIPYmoiGAmDWzROjUmPjrJiv+xR/VFVr0ssJf5TjHGA+6HCyFVPzKxRSuR+JDBtYVy57wNoQbeJwEbnP2C1CFT3lR8elorA95SuFR47L3BfBAI00PTsTRE4CGFXYC0/fmpUbwGqXghSua87LLvqlZm1wxC2gb08Yt2onpuZf4ExxpG6HzcwBlhw34whzASmGZq56pmZvXWNqvxPB22GABwm8h1G7aqnZvbcX6HKsy+2c/Zr4a5VvTCz1981sZSIMQ7FfUdgy0GAlwou65Qe/gpNSm51nj4BN2Ff5I8WpFoAAAAASUVORK5CYII=);
+}
+.friends-list .contact-offline .contact-actions .action-call {
+	display: none;
+}
+.friends-list .contact-actions .action-url {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gIaDzYnhs5QRwAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABwUlEQVQoz22SMWtTcRTFf+f/D886W3VwcDEiLi2K36C0lYRAoGBwchPpIijURVQEcVDoIAh+gQpCQsMLBroUJ+lcMghKRXQTHSR9Td57xyUpWj3T5XDvPedyjziCer1+3PYMEIBC0kGapvtH+zQtarVaAixLWrW9OKELSW9tv5S0labpeNofAZrNZqUsyzXg1YTfAN4AO8ACsArsz8/Pvx8MBiUTO4zH40Xbj4FU0tUY44Ner/csxrgO3AK6wJPhcLh0qLiysjKT5/lzSQmwLukrMFutVpdt/5B0QtJH4Iqks3Nzc+3BYJCHLMtmbC/Z3ga2gbIsyx5wDshs79n+DryzvTAajY4BBElhYnnH9qztPnAG2AdOA+cl/QI+AEme5xEghBBKSX1JXyS9BqrTM2KMu5LGZVkKSIC8UqkUAGFzc/MncNv2Q+DiH68K3W53CCBJwDVJ/RjjAUBoNBoJcH2ycci/CJJuAlXbL9rtdvZXABqNxsmiKHaBT8Al4JGkb7bXgAvA/SRJnnY6nRygMh0siuIecAq4DNQB274BfJZ0tyiKrenQoeIkbhuS9tI0vdNqtSqj0SjJsiyGEPL/ZfU32NPCKgC83loAAAAASUVORK5CYII=);
+}
+.friends-list .contact-actions .action-fileSending,
+.friends-list .contact-actions .action-otr {
+	display: none;
+}
+
+.conversation {
+	position: relative;
+	margin-left: 320px;
+	height: 100%;
+	padding-bottom: 50px;
+}
+.conversation ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	max-height: 100%;
+	overflow-y: auto;
+}
+.conversation .msg {
+	display: block;
+	padding: 6px 12px;
+}
+.conversation .msg.msg-sent {
+	text-align: right;
+}
+.conversation .msg .msg-contact-picture-ctn {
+	position: relative;
+}
+.conversation .msg .msg-contact-picture {
+	width: 24px;
+	height: 24px;
+	margin-top: 4px;
+	border-radius: 2px;
+}
+.conversation .msg.msg-received .msg-contact-picture-ctn {
+	float: left;
+}
+.conversation .msg.msg-sent .msg-contact-picture-ctn {
+	float: right;
+}
+.conversation .msg.msg-encrypted .msg-contact-picture-ctn:after {
+	display: block;
+	position: absolute;
+	content: " ";
+	width: 10px;
+	height: 10px;
+	top: 24px;
+	right: -4px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3gIZDhMLT5IpmgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAA4klEQVQY032PMU6EUBRFz/0wQe1+Z2eHIZSQWLkEi4mhspbCJbgAd2DDAkysXYDVdLIA6YyNHZUBmcCzAU2MM6d6776Tmzwxk2XZKo7jPAiCU4BxHF+bpnmp63oLEC5ikiTnku6AI4AwDD/TNL2t6/oZwPFLLqkfhmE9DMPazL7MLF+OP43OuUOgn6bpfd77pR1ARVEEURRdOeduzOxE0hOAmV1IejOz+77vH0IgkHQp6UwSwDXAPB8DH8Cjm8OI3Rz8fWYvoffeuq7b7BLMbOO9NwGUZblq21b/id57q6pq+w2+WkzSePDjrQAAAABJRU5ErkJggg==);
+}
+.conversation .msg .msg-content {
+	display: inline-block;
+	position: relative;
+	max-width: 50%;
+	margin: 0 12px;
+	padding: 6px 8px;
+	text-align: left;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	border-radius: 3px;
+}
+.conversation .msg.msg-received .msg-content {
+	border: 1px solid #a9a9a9;
+	background-color: #f3f3f3;
+}
+.conversation .msg.msg-received .msg-content:before {
+	position: absolute;
+	top: 6px;
+	left: -11px;
+	content: " ";
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAMCAYAAAC0qUeeAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gIMDDIpci4OXgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAA7klEQVQoz43PsWrDMBRG4SNRMikmBOzFnpwlb5D3n7PaS1YHbBBIxiJgYku3Q0naQmh61/vBz1EiIry5cRxpmgb9DooI0zSx3W7/h0MIZFn2Hi/LQt/35Hn+N17XlbZtyfMc4DUWEdZ1pes6vPccDgcAPn6ilBIpJeZ5pm1bbrcbp9Pp+VciIg9grWUYBpxz1HVNWZa/FpWIyP1+53w+Y63leDxSVdXLBiUiEmMkhMDlcsE5R1EUZFmGMYYYIykljDFf+BG1LAshBLz3TNPEPM9ordFac71evwOVUmw2G/b7PbvdjpTScz7GSNd1fAL8YJI07mEgmQAAAABJRU5ErkJggg==);
+	width: 11px;
+	height: 12px;
+}
+.conversation .msg.msg-sent .msg-content {
+	border: 1px solid #87afcd;
+	background-color: #dfedf6;
+}
+.conversation .msg.msg-sent .msg-content:after {
+	position: absolute;
+	top: 6px;
+	right: -11px;
+	content: " ";
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAMCAYAAAC0qUeeAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gIMDDUca9xcugAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABGElEQVQoz4XOO0vDUBiH8eecXEia9KJtbUVQrBcQBQfBTSdHZz+f38HZobsOFVpwkOCtgk3QWmvS1J7jIBVFND94t4c/L8fNju6Gz1oppbPIUs6lNxihtSaLLHg2vZcYpVR2XPZdLh/6xKM0c12WPIfaTJ7Tdpc0Tf+PFbCzWucmimldRyRJ8udLIojeNEB/OKLZvqPiWRxs1ijkHEzTxDAMhBA/46mLoEfnNmSp7LNW92lUffKei2VZv+OpVhByfvXIcjXH0e4inudh3odD4vEYQwiEEAziMU/DhLvolY15n731CpZlAWCenAVsLRR5VxOU1hQdi8asw/5KiWrRxXVdpJSf8WSiONyew7ZttNZIKTEM4+u++wAK0o+AnB+C6wAAAABJRU5ErkJggg==);
+	width: 11px;
+	height: 12px;
+}
+.conversation .msg.msg-received.msg-typing .msg-content {
+	padding-left: 12px;
+	padding-right: 12px;
+	background-color: #f1f1f1;
+	background-image: -moz-linear-gradient(#ececec, #f7f7f7);
+	background-image: -webkit-linear-gradient(#ececec, #f7f7f7);
+	background-image: linear-gradient(#ececec, #f7f7f7);
+}
+.conversation .msg .msg-content img,
+.conversation .msg .msg-content audio,
+.conversation .msg .msg-content video {
+	max-width: 100%;
+}
+.conversation .conversation-compose {
+	position: absolute;
+	display: none; /* hidden by default */
+	bottom: 0;
+	width: 100%;
+	padding: 12px;
+	background-color: white;
+}
+.conversation-compose .compose-attach {
+	float: left;
+}
+.conversation-compose .compose-msg-ctn {
+	margin-left: 50px;
+	margin-right: 34px;
+}
+.conversation-compose .compose-msg {
+	width: 100%;
+}
+.conversation-compose .compose-contact-picture {
+	float: right;
+	width: 24px;
+	height: 24px;
+	border-radius: 2px;
+}
+
+.accounts-list {
+	display: block;
+	width: 250px;
+	float: left;
+}
+.account-settings {
+	margin-left: 250px;
+	padding: 5px;
+}
+
+.videos {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.videos .video-local, .videos .video-remote {
+	position: absolute;
+	background-color: black;
+}
+.videos .video-remote {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	text-align: center;
+}
+.videos .video-remote.video-remote-1,
+.videos .video-remote.video-remote-2,
+.videos .video-remote.video-remote-3,
+.videos .video-remote.video-remote-4 {
+	overflow: hidden;
+}
+.videos .video-remote li {
+	display: inline-block;
+	overflow: hidden;
+}
+.videos .video-remote video {
+	width: 100%;
+	height: 100%;
+}
+.videos .video-remote li { /* 3+ videos */
+	width: 49%;
+	height: 50%;
+}
+.videos .video-remote.video-remote-1 li { /* 1 video */
+	width: 100%;
+	height: 100%;
+}
+.videos .video-remote.video-remote-2 li { /* 2 videos */
+	width: 49%;
+	height: 100%;
+}
+.videos .video-info {
+	position: absolute;
+	display: none;
+}
+.videos .video-remote, .videos .video-info {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.videos .video-local {
+	left: 0;
+	bottom: 0;
+	width: 20%;
+	margin: 10px;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+.videos .video-local:hover {
+	opacity: 0;
+}

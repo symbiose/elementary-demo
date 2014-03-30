@@ -1,0 +1,69 @@
+html, body {
+	overflow: hidden;
+}
+
+#webos-loading, #webos-unsupported, #webos-loading-console {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../../images/splash/darknoise.png') #262626;
+	z-index: 9000;
+	font-family: Cantarell, 'Droid Sans', 'DejaVu Sans', Arial, sans-serif;
+}
+
+#webos-loading .center, #webos-unsupported .center {
+	position: relative;
+	top: 42%;
+	margin: auto;
+	text-align: center;
+}
+
+#webos-loading p {
+	background: url('../../images/splash/loader.gif') no-repeat left center;
+	padding: 5px 0 5px 30px;
+	display: inline;
+
+	color: gray;
+}
+#webos-unsupported p {
+	color: #ff6767;
+}
+
+#webos-loading a, #webos-unsupported a,
+#webos-loading a:hover, #webos-unsupported a:hover,
+#webos-loading a:active, #webos-unsupported a:active,
+#webos-loading a:visited, #webos-unsupported a:visited {
+	color: inherit;
+}
+#webos-unsupported p.error a,
+#webos-unsupported p.error a:hover,
+#webos-unsupported p.error a:active,
+#webos-unsupported p.error a:visited {
+	color: inherit;
+}
+
+#webos-loading-console {
+	background-color: black;
+	color: white;
+
+	overflow: auto;
+}
+
+#webos-loading-console, #webos-loading-console * {
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 16px;
+}
+
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+.clearfix {
+	display: block;
+	clear: both;
+}

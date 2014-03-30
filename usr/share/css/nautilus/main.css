@@ -1,0 +1,113 @@
+.webos-nautilus {
+	height: 100%;
+	overflow: auto;
+	margin: 0;
+}
+
+.webos-nautilus ul.icons {
+	list-style-type: none;
+	list-style-position: inside;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.webos-nautilus ul.icons li {
+	width:110px;
+	height:75px;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 3px;
+}
+.webos-nautilus ul.icons li img.icon {
+	opacity: 0.85;
+	max-width: 105px;
+	max-height: 50px;
+}
+.webos-nautilus ul.icons li span.filename {
+	display: inline-block;
+	padding: 2px 3px;
+	width: auto;
+	max-width: 100%;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.webos-nautilus ul.icons li input {
+	width: 100% !important;
+}
+
+.webos-nautilus ul.icons li.active span.filename {
+	background-color: #d76741;
+	color: white;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.webos-nautilus ul.icons li.ui-droppable-hover img.icon {
+	opacity: 1;
+}
+
+.webos-nautilus ul.icons li.ui-draggable-dragging {
+	opacity: 0.7;
+}
+
+.webos-nautilus ul.icons li:hover img.icon {
+	opacity: 1;
+}
+
+.webos-nautilus .webos-list {
+	color: #4c4c4c;
+	height: 100%;
+}
+.webos-nautilus .webos-list img.icon {
+	height: 17px;
+	margin-right: 2px;
+}
+
+.webos-nautilusfileselector input[type="text"] {
+	width: 290px;
+	margin: 0px 2px;
+}
+.webos-nautilusfileselector .webos-nautilus {
+	height: 250px;
+}
+
+.webos-nautilusshortcuts {
+	min-width: 100px;
+	float: left;
+	height: 100%;
+	overflow: auto;
+}
+.webos-nautilusshortcuts strong.title {
+	font-size: 1.05em;
+	padding-left: 2px;
+}
+.webos-nautilusshortcuts .webos-list table {
+	border: none;
+	background: none;
+}
+.webos-nautilusshortcuts .webos-list table td {
+	display: block;
+	max-width: 200px;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.webos-nautilusshortcuts .webos-list-item img {
+	width: 20px;
+	height: 20px;
+	margin-right: 2px;
+}
+.webos-nautilusshortcuts .webos-list-item img.umount {
+	float: right;
+	width: 16px;
+	height: 16px;
+	margin: 2px;
+	margin-left: 10px;
+}

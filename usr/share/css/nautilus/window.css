@@ -1,0 +1,45 @@
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+.pull-right > div {
+	display: inline-block;
+}
+.expand {
+	margin-left: 160px;
+	margin-right: 50px;
+	overflow: hidden;
+}
+.clearfix {
+	display: block;
+	clear: both;
+}
+
+.nautilus-header {
+	padding: 3px;
+}
+.nautilus-header .btn-navigation {
+	display: inline-block;
+	float: left;
+}
+.nautilus-header .btn-navigation .webos-button:not(:hover):not(:active) {
+	border-color: transparent;
+	background: none;
+	box-shadow: none;
+}
+.nautilus-header .entry-search-query {
+	display: none;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.webos-nautilus {
+	background-color: white;
+}
+.webos-nautilusshortcuts {
+	border-right: 1px solid #9e9e9e;
+}

@@ -1,0 +1,441 @@
+/* UBUNTU FONTS */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono);
+
+/* UBUNTU CURSORS */
+* {
+	cursor: url("usr/share/images/themes/adwaita/cursors/default.png"), default;
+}
+p, textarea, input[type="text"], input[type="password"],
+*::selection, *::-moz-selection, *::-webkit-selection, *::-o-selection {
+	cursor: url("usr/share/images/themes/adwaita/cursors/text.png"), text;
+}
+a, a * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/pointer.png"), pointer, hand;
+}
+
+.cursor-default,.cursor-default * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/default.png"), default;
+}
+
+.cursor-text, .cursor-text * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/text.png"), text;
+}
+
+.cursor-pointer, .cursor-pointer * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/pointer.png"), pointer, hand;
+}
+
+.cursor-wait, .cursor-wait * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/wait.ani"), wait;
+}
+
+.cursor-move, .cursor-move * {
+	cursor: url("usr/share/images/themes/adwaita/cursors/move.png"), move;
+}
+
+.cursor-none, .cursor-none * {
+	cursor: none;
+}
+
+img {
+	border-width: 0px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+a, a:hover, a:active {
+	color: #04369a;
+	outline: none; /* On enleve la bordure en pointilles par defaut sur certains navigateurs lors du clic sur un lien */
+}
+
+*::selection, *::-moz-selection, *::-webkit-selection, *::-o-selection {
+	background: #498ed6;
+	color: #fff;
+}
+
+body {
+	overflow: hidden;
+}
+
+/* Ensemble de l'interface */
+.gnome-shell { 
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	font-family: Cantarell, 'Droid Sans', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+	overflow: hidden;
+	position: absolute;
+}
+
+#header, .desktop-bar {
+	background-color: black;
+	width: 100%;
+	height: 26px;
+	color: #cbcbcb;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	z-index: 2000;
+	top: 0px;
+	border-bottom: 1px solid black;
+}
+
+#desktop {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: white;
+	overflow: hidden;
+	top: 27px;
+	bottom: 0;
+}
+
+#shell-appmenu {
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 26px;
+}
+#shell-appmenu.hover {
+	height: 25px;
+}
+#shell-appmenu .icon-container {
+	float: left;
+	height: 100%;
+	width: 48px;
+	overflow: hidden;
+}
+#shell-appmenu .icon-container img.icon {
+	position: relative;
+	top: -12px;
+	width: 48px;
+	height: 48px;
+	max-width:48px;
+	max-height: 48px;
+}
+#shell-appmenu .icon-container .icon-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 48px;
+	height: 100%;
+	background : -moz-linear-gradient(left, transparent 40%, black 80%);
+	background : -webkit-linear-gradient(left, transparent 40%, black 80%);
+	background : -ms-linear-gradient(left, transparent 40%, black 80%);
+	background : linear-gradient(left, transparent 40%, black 80%);
+}
+#shell-appmenu .title {
+	display: inline-block;
+	line-height: 26px;
+	position: relative;
+	left: -35px;
+}
+#shell-appmenu .loading {
+	float: right;
+	height: 26px;
+	width: 26px;
+	background: url('usr/share/images/themes/adwaita/shell/loading.gif') no-repeat center center;
+}
+
+#shell {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: black;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#shell .side-box, #shell .content {
+	/* on permet à ces éléments de s'aligner verticalement */
+	display: inline-block;
+	vertical-align: middle;
+}
+#shell .content {
+	/* hauteur de la fenêtre, par rapport à laquelle les éléments vont être alignés */
+	height: 100%;
+	width: 90%;
+}
+
+#shell .side-box {
+	list-style: none;
+	margin: 0;
+	border: 1px solid #333433;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#shell .launcher {
+	padding-left: 3px;
+	border-left: none;
+	-moz-border-radius: 0 7px 7px 0;
+	-webkit-border-radius: 0 7px 7px 0;
+	border-radius: 0 7px 7px 0;
+}
+#shell .launcher li.icon {
+	width: 48px;
+	height: 48px;
+	padding: 2px;
+	margin: 3px;
+	text-align: center;
+}
+#shell .launcher li.icon:hover {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-color: rgba(69, 69, 69, 0.3);
+}
+#shell .launcher li.icon.active {
+	background-image: url('usr/share/images/themes/adwaita/shell/shadow.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+#shell .launcher li.icon img {
+	max-width: 48px;
+	height: 48px;
+}
+#shell .launcher li.insert {
+	width: 48px;
+	height: 27px;
+	background: url('usr/share/images/themes/adwaita/shell/launcher-placeholder.png') no-repeat center center;
+}
+#shell .launcher li.trash {
+	width: 48px;
+	height: 48px;
+	background-color: green;
+}
+
+#gnome-shell-overlay div .window-close {
+	float: right;
+	width: 32px;
+	height: 32px;
+	position: relative;
+	top: -16px;
+	right: -16px;
+	background: url('usr/share/images/themes/adwaita/shell/close.png');
+	visibility: hidden;
+}
+#gnome-shell-overlay div:hover .window-close {
+	visibility: visible;
+}
+#gnome-shell-overlay div .window-label {
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 100%;
+	max-height: 27px;
+	overflow: hidden;
+}
+#gnome-shell-overlay div .window-label span {
+	display: inline-block;
+	color: white;
+	font-weight: bold;
+	background-color: black;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 2px 12px;
+	margin-top: 5px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#gnome-shell-overlay div .icon {
+	display: none;
+}
+#gnome-shell-overlay.fallback > div {
+	background-color: white;
+	border: 3px solid #333333;
+	-moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+}
+#gnome-shell-overlay.fallback .icon {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 92px;
+	width: 92px;
+}
+#gnome-shell-overlay.fallback .icon img {
+	position: relative;
+	top: -46px;
+	left: -46px;
+	height: 92px;
+	width: 92px;
+}
+
+#shell .mode {
+	list-style: none;
+	position: absolute;
+	left: 155px;
+	padding: 0;
+	margin: 30px 0 0 0;
+}
+#shell .mode li {
+	display: inline-block;
+	color: #888a85;
+	padding: 5px;
+	font-weight: bold;
+}
+#shell .mode li:hover {
+	color: #bababa;
+}
+#shell .mode li.active {
+	color: black;
+	background-color: #c2c7cd;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#shell .search-entry {
+	float: right;
+	margin: 27px 20px 0 0;
+	padding: 5px 15px;
+	font-size: 1.2em;
+	color: #7f7f7f;
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+	outline: none;
+	transition-duration: 0.5s;
+}
+#shell .search-entry.active {
+	border-color: #888a85;
+	background-color: #dddddd;
+	color: #404040;
+	box-shadow: inset 0 3px 6px #696a69;
+}
+#shell .search-entry:focus {
+	font-weight: bold;
+}
+#shell .search-entry::-webkit-input-placeholder {
+	font-weight: normal;
+	color: #7f7f7f;
+}
+#shell .search-entry:-moz-placeholder {
+	font-weight: normal;
+	color: #7f7f7f;
+}
+#shell .search-entry:focus::-moz-placeholder {
+	font-weight: normal;
+	color: #7f7f7f;
+}
+#shell .search-entry:-ms-input-placeholder {
+	font-weight: normal;
+	color: #7f7f7f;
+}
+
+#shell .shortcuts {
+	display: none;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 120px;
+	height: 95%;
+}
+#shell .shortcuts .filters {
+	list-style: none;
+	margin: 4px 15px;
+	padding: 0;
+	float: right;
+	width: 250px;
+	height: 100%;
+}
+#shell .shortcuts .filters li {
+	margin: 15px 2px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #a8a8a8;
+}
+#shell .shortcuts .filters li:hover,
+#shell .shortcuts .filters li.active {
+	color: white;
+}
+#shell .shortcuts .list {
+	height: 100%;
+	overflow: auto;
+}
+#shell .shortcuts .list ul {
+	display: block;
+	list-style: none;
+	margin: 2px;
+	padding: 0;
+}
+#shell .shortcuts .list ul li {
+	display: inline-block;
+	text-align: center;
+	margin: 20px;
+	padding: 5px;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	-o-text-overflow: ellipsis; /* pour Opera 9 */
+	text-overflow: ellipsis; /* pour le reste du monde */
+	white-space: nowrap;
+}
+#shell .shortcuts .list ul li:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+#shell .shortcuts .list ul li.active {
+	background-image: url('usr/share/images/themes/adwaita/shell/shadow.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+#shell .shortcuts .list ul li img {
+	width: 92px;
+	height: 92px;
+}
+#shell .shortcuts .list ul li .title {
+	color: white;
+}
+
+#shell .workspaces {
+	height: 85%;
+	padding: 6px;
+	border-right: none;
+	-moz-border-radius: 7px 0 0 7px;
+	-webkit-border-radius: 7px 0 0 7px;
+	border-radius: 7px 0 0 7px;
+}
+#shell .workspaces li {
+	border: 2px solid transparent;
+	font-size: 1px;
+}
+#shell .workspaces li.active {
+	border: 2px solid white;
+}
+#shell .workspaces li canvas {
+	font-size: 60px;
+	text-align: center;
+}
+
+.ui-selectable-helper {
+	border: 1px solid #498ed6;
+	background: rgba(73, 142, 214, 0.3);
+}
+
+.webos-nautilus ul.icons li.active span.filename {
+	background-color: #4a90d9 !important;
+	color: white;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
